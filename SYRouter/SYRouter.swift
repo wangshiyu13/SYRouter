@@ -86,7 +86,7 @@ class SYRouter {
     }
     
     /// MARK: - extract params in a route
-    func paramsInRoute(route: String) -> [String: AnyObject]? {
+    private func paramsInRoute(route: String) -> [String: AnyObject]? {
         var params: [String: AnyObject] = [:]
     
         params["route"] = stringFromFilterAppUrlScheme(route)
@@ -148,7 +148,7 @@ class SYRouter {
     /// MARK: - Private Property & Method
     private let routeDict = NSMutableDictionary()
     
-    var appUrlSchemes: [String] = {
+    private var appUrlSchemes: [String] = {
         var schemes: [String] = []
         var infos = NSBundle.mainBundle().infoDictionary
         if let types = infos?["CFBundleURLTypes"] as? NSArray {
