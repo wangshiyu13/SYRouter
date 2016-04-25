@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		CF6F9C531CCCE53C00C77327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F9C521CCCE53C00C77327 /* AppDelegate.swift */; };
 		CF6F9C551CCCE53C00C77327 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F9C541CCCE53C00C77327 /* ViewController.swift */; };
-		CF6F9C581CCCE53C00C77327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6F9C561CCCE53C00C77327 /* Main.storyboard */; };
 		CF6F9C5A1CCCE53C00C77327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6F9C591CCCE53C00C77327 /* Assets.xcassets */; };
 		CF6F9C5D1CCCE53C00C77327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6F9C5B1CCCE53C00C77327 /* LaunchScreen.storyboard */; };
+		CF6F9C651CCCE62400C77327 /* SYRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F9C641CCCE62400C77327 /* SYRouter.swift */; };
+		CF6F9C671CCD163000C77327 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F9C661CCD163000C77327 /* BViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF6F9C4F1CCCE53C00C77327 /* SYRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6F9C521CCCE53C00C77327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF6F9C541CCCE53C00C77327 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF6F9C571CCCE53C00C77327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF6F9C591CCCE53C00C77327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF6F9C5C1CCCE53C00C77327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6F9C5E1CCCE53C00C77327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6F9C641CCCE62400C77327 /* SYRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYRouter.swift; sourceTree = "<group>"; };
+		CF6F9C661CCD163000C77327 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				CF6F9C521CCCE53C00C77327 /* AppDelegate.swift */,
+				CF6F9C661CCD163000C77327 /* BViewController.swift */,
 				CF6F9C541CCCE53C00C77327 /* ViewController.swift */,
-				CF6F9C561CCCE53C00C77327 /* Main.storyboard */,
 				CF6F9C591CCCE53C00C77327 /* Assets.xcassets */,
 				CF6F9C5B1CCCE53C00C77327 /* LaunchScreen.storyboard */,
 				CF6F9C5E1CCCE53C00C77327 /* Info.plist */,
+				CF6F9C641CCCE62400C77327 /* SYRouter.swift */,
 			);
 			path = SYRouter;
 			sourceTree = "<group>";
@@ -124,7 +127,6 @@
 			files = (
 				CF6F9C5D1CCCE53C00C77327 /* LaunchScreen.storyboard in Resources */,
 				CF6F9C5A1CCCE53C00C77327 /* Assets.xcassets in Resources */,
-				CF6F9C581CCCE53C00C77327 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,21 +138,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6F9C551CCCE53C00C77327 /* ViewController.swift in Sources */,
+				CF6F9C671CCD163000C77327 /* BViewController.swift in Sources */,
 				CF6F9C531CCCE53C00C77327 /* AppDelegate.swift in Sources */,
+				CF6F9C651CCCE62400C77327 /* SYRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF6F9C561CCCE53C00C77327 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF6F9C571CCCE53C00C77327 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF6F9C5B1CCCE53C00C77327 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -12,14 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let button = UIButton(type: .Custom)
+        view.addSubview(button)
+        button.frame = CGRectMake(100, 100, 100, 100)
+        button.backgroundColor = UIColor.redColor()
+        button.addTarget(self, action: #selector(self.click), forControlEvents: .TouchUpInside)
+    }
+    
+    func click() {
+        debugPrint("button--Click")
+        let vc = SYRouter.shared.matchController("/B/:test/?test=1")
+        self.presentViewController(vc, animated:true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

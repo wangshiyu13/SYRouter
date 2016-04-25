@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.whiteColor()
+        self.window?.rootViewController = ViewController()
+//        [[HHRouter shared] map:@"/story/:userId/" toControllerClass:[StoryViewController class]];
+        SYRouter.shared.map("/B/:test", toControllerClass: BViewController.self)
+        self.window?.makeKeyAndVisible()
         return true
     }
 
